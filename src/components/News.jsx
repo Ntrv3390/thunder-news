@@ -9,10 +9,11 @@ const News = (props) => {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [totalResults, setTotalResults] = useState(0);
+  const apiKey = import.meta.env.VITE_APP_NEWS_API_KEY;
 
   const updateNews = async () => {
     setLoading(true);
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+    const url = `/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}&page=${page}&pageSize=${props.pageSize}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     setArticles(parsedData.articles);
