@@ -11,7 +11,7 @@ export const fetchNewsByCategory = createAsyncThunk(
     }
     try {
       const response = await fetch(
-        `/api/news/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${page}&pageSize=${pageSize}`
+        `https://thunder-news-backend.vercel.app/api/news/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${page}&pageSize=${pageSize}`
       );
       const data = await response.json();
       if (response.status < 200 || response.status >= 300) {
