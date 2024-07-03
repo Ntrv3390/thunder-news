@@ -13,4 +13,4 @@ If you're using your api key then go to the vite.config.js and remove my server 
 Backend: Express app.
 
 This project was not meant to be full stack, but due to pricing changes of newsapi.org, free plan users can only call api's from localhost.
-Hence we need a server to serve the request. Go play now!
+Hence we need a server to serve the request. If you're planning not to deploy the app then you don't need a server. Go play now!
