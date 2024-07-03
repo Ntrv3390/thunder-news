@@ -1,8 +1,16 @@
-# React + Vite
+# Welcome to Thunder News
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Read some thunder news on: `https://thundernews.vercel.app`
 
-Currently, two official plugins are available:
+### For Dev's
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend: Made using Vite + React.
+
+To setup, pull this from `` or download the zip file. After that run this command `npm i` to install all the dependencies.
+Make a `.env` file in the root directory and add `VITE_APP_NEWS_API_KEY=YOUR_API_KEY`. To get your api key, go to newsapi.org.
+If you're using your api key then go to the vite.config.js and remove my server proxy from it. Run `npm run dev` and play around.
+
+Backend: Express app.
+
+This project was not meant to be full stack, but due to pricing changes of newsapi.org, free plan users can only call api's from localhost.
+Hence we need a server to serve the request. Go play now!
