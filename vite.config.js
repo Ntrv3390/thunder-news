@@ -5,8 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/v2': 'https://newsapi.org',
-      '/v2/top-headlines': 'https://localhost:5000',
+      '/api': 'https://thunder-news-backend.vercel.app',
     }
   },
   plugins: [react()],

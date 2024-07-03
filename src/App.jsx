@@ -1,5 +1,6 @@
 import "./App.css";
 import AppRouter from "./router/AppRouter";
+import Footer from './components/Footer'
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Navbar />
         <AppRouter pageSize={pageSize} />
+        <Footer />
       </Router>
     </>
   );
