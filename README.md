@@ -2,7 +2,7 @@
 
 Read some thunder news on: `https://thundernews.vercel.app`
 
-### For Dev's
+## For Dev's
 
 Frontend: Made using Vite + React.
 
@@ -14,3 +14,5 @@ Backend: Express app.
 
 This project was not meant to be full stack, but due to pricing changes of newsapi.org, free plan users can only call api's from localhost.
 Hence we need a server to serve the request. If you're planning not to deploy the app then you don't need a server. Go play now!
+
+### Thank you for your visit!
