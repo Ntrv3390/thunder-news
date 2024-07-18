@@ -12,8 +12,8 @@ const Newsitem = (props) => {
               ? imageUrl
               : "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
           }
-          height:{100}
-          width: {100}
+          height:"100%"
+          width: "100%"
           className="card-img-top"
           alt="abc"
         />
